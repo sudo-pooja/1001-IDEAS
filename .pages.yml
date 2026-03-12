@@ -1,16 +1,34 @@
-media: 'images'
+# .pages.yml
+media: 'assets/images'
 content:
   - name: posts
-    label: My Posts
+    label: Daily Ideas
     type: collection
     path: '_posts'
+    view:
+      fields: [ title, date, categories, tags ]
     fields:
       - name: title
-        label: Title
+        label: Title of the Idea
         type: string
       - name: date
-        label: Date
+        label: Publication Date
         type: date
+      - name: categories
+        label: Category (e.g., Philosophy, Science)
+        type: string
+        description: One main category (comma separate if multiple)
+      - name: tags
+        label: Tags (including timeline)
+        type: string
+        description: Comma‑separated – e.g., 10000BC, agriculture, neolithic
+      - name: image
+        label: Featured Image
+        type: image
+      - name: image_source
+        label: Image Source / Citation
+        type: string
+        description: Where did you get this image? (e.g., Wikimedia Commons)
       - name: body
-        label: Content
+        label: Your Reflection
         type: rich-text
