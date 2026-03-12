@@ -1,6 +1,37 @@
-# _config.yml
 title: "1000 Ideas That Changed The Way I Think"
 description: "A page a day for 1000 days"
+url: "https://sudo-pooja.github.io/1001-IDEAS/"
+baseurl: ""
+
+# Theme
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+
+# Minima theme customization
+minima:
+  date_format: "%B %-d, %Y"
+
+# Enable tag and category pages
+jekyll-archives:
+  enabled:
+    - tags
+    - categories
+  layout: archive
+  permalinks:
+    tag: /tag/:name/
+    category: /category/:name/
+
+# Default front matter for posts
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      image: 
+      image_source:
+      categories:
+      tags:
