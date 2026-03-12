@@ -1,0 +1,6 @@
+# _config.yml
+title: "1000 Ideas That Changed The Way I Think"
+description: "A page a day for 1000 days"
+theme: minima
+plugins:
+  - jekyll-feed
