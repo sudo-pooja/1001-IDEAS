@@ -1,12 +1,12 @@
+# _config.yml
 title: "1000 Ideas That Changed The Way I Think"
 description: "A page a day for 1000 days"
 url: "https://sudo-pooja.github.io/1001-IDEAS/"
 baseurl: ""
 
 # Theme
-remote_theme: pages-themes/cayman@v0.2.0
+theme: minima
 plugins:
-  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
