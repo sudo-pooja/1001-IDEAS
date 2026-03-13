@@ -3,6 +3,7 @@ title: "1000 Ideas That Changed The Way I Think"
 description: "A page a day for 1000 days"
 url: "https://sudo-pooja.github.io"
 baseurl: "/1001-IDEAS"
+future: true
 
 # Theme
 theme: minima
