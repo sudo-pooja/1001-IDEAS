@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-  {%- include head.html -%}
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+
+    {%- seo -%}
+    {%- feed_meta -%}
+    {%- include head-custom.html -%}
+  </head>
   <body>
     {%- include header.html -%}
 

@@ -1,0 +1,26 @@
+name: Compress Images
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "assets/images/**"
+      - ".github/workflows/compress-images.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  compress:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compress image assets
+        uses: calibreapp/image-actions@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          compressOnly: true
+          ignorePaths: "assets/images/.keep"
