@@ -1,8 +1,8 @@
 # _config.yml
 title: "1000 Ideas That Changed The Way I Think"
 description: "A page a day for 1000 days"
-url: "https://sudo-pooja.github.io/1001-IDEAS/"
-baseurl: ""
+url: "https://sudo-pooja.github.io"
+baseurl: "/1001-IDEAS"
 
 # Theme
 theme: minima
